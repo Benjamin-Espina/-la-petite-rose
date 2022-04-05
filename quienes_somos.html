@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="shortcut icon" href="img/icono.png">
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>La petite Rose</title>
+</head>
+<body>
+  <div class="container" style="display: flex; margin-top: 1.5%; margin-left: 5px;">
+    <img id="imga" src="img/teemo.png" style="height: 300px;">
+    <label for="imga">
+      <h3 class="text-success" style="margin-left: 10px;">Fundación Exploradores de Bandle</h3>
+    </br>
+      <h3 class="text-success" style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ex a pariatur eius eligendi debitis aliquam enim, tenetur minus eveniet non molestiae! Reiciendis distinctio expedita incidunt at illo consectetur laboriosam. lore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius quibusdam tempore quidem veniam soluta itaque error. Quas similique dignissimos veniam. Veniam sed delectus sunt, unde obcaecati eligendi sapiente et!</h3>
+    </label>
+  </div>
+  <div style="text-align: center;">
+    <h2>Nuestro granito de arena</h2>
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/n1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/n2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/n3.jpg" style="width:100%">
+  </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 1500);
+    }
+  </script>
+</body>
+</html>
