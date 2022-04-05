@@ -1,0 +1,83 @@
+:root {
+    --nav-fuente: 'Poppins', sans-serif;
+    --sg-font: 'Kaisei Tokumin', serif;
+ }
+
+ .logo , .logo2{
+    width: 150px;
+    height: 90px;
+ }
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--nav-fuente);
+}
+
+/* navbar */
+.navbar{
+-webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+        background-color: rgb(252, 252, 252);
+    }
+
+.navbar-brand span{
+letter-spacing: 2px;
+font-family: var(--lg-font);
+}
+.nav-item{
+border-bottom: 0.5px solid rgba(29, 1, 1, 0.05);
+}
+
+/*Header*/
+#header{
+background: url('../img/tierra.jpg') top/cover no-repeat;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-right: 25px;
+margin-left: 25px;
+}
+
+.btn1{
+background-color: rgb(255, 255, 255);
+color: rgb(85, 85, 85);
+padding: 10px 28px;
+border-radius: 25px;
+border: 1px solid rgb(85, 85, 85);
+width:200px;
+margin: 0 auto;
+}
+
+.titulo {
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);    
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-prod{
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);    
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px){
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+
+.card {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
