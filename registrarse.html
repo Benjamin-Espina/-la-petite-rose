@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/miestilo_happy.css">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
     <link rel="stylesheet" href="css/registrarse.css">
     <link rel="shortcut icon" href="img/icono.png">
     <!-- Latest compiled and minified CSS -->
@@ -83,28 +83,31 @@
     </div>
 </div>
 </nav>
-<div class="login-box">
-  <h1>Registrarse</h1>
-  <form>
-    <!-- Nombre INPUT -->
-    <label for="nombre">Nombre</label>
-    <input type="text" placeholder="Ingresar usuario">
-    <!-- Apellido INPUT -->
-    <label for="apell">Apellido</label>
-    <input type="text" placeholder="Ingresar apellido">
-    <!-- Edad INPUT -->
-    <label for="edad">Edad</label>
-    <input type="number" max="120" min="1" class="form-control" id="nom" name="edad" placeholder="Ingrese edad" required>
-    <!-- Correo INPUT -->
-    <label for="mail" class="form-label">Correo Electrónico</label>
-    <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
-    <!-- Contraseña INPUT -->
-    <label for="password">Contraseña</label>
-    <input type="password" placeholder="Ingrese contraseña">
-    <input type="submit" value="Iniciar sesion">
-
-  </form>
+<div id="flex-login-box">
+    <div class="login-box">
+        <h1>Registrarse</h1>
+        <form>
+          <!-- Nombre INPUT -->
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Ingresar usuario">
+          <!-- Apellido INPUT -->
+          <label for="apell">Apellido</label>
+          <input type="text" placeholder="Ingresar apellido">
+          <!-- Edad INPUT -->
+          <label for="edad">Edad</label>
+          <input type="number" max="120" min="1" class="form-control" id="nom" name="edad" placeholder="Ingrese edad" required>
+          <!-- Correo INPUT -->
+          <label for="mail" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
+          <!-- Contraseña INPUT -->
+          <label for="password">Contraseña</label>
+          <input type="password" placeholder="Ingrese contraseña">
+          <input type="submit" value="Iniciar sesion">
+      
+        </form>
+      </div>
 </div>
+
 
       <!--footer-->
       <footer class = "bg-dark py-5 mt-5">

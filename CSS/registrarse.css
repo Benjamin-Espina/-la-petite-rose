@@ -1,14 +1,33 @@
 
+/*#logg{
+    display: flex;
+    width: 100%;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+}*/
+#flex-login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 700px; 
+    margin-bottom: 18%;
+}
 .login-box {
     width: 320px;
-    height: 420px;
+    height: 100%;
     background: #212529;
     color: #fff;
-    top: 50%;
-    left: 50%;
+    margin-top: 26%;
+    /* margin-bottom: 26%; */
+    /* margin-top: 100%;
+    margin-bottom: 100%; */
+    /* top: 50%;
+    left: 50%; */
     position: sticky;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
+    /* z-index: 9999; */
+    /* transform: translate(-50%, -50%); */
     box-sizing: border-box;
     padding: 70px 30px;
 }
