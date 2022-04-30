@@ -1,0 +1,16 @@
+
+.products .product_list li .quick-view {
+    font-size: 0px;
+    height: 35px;
+    width: 35px;
+    display: inherit;
+    vertical-align: middle;
+    transition: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    padding: 0;
+    margin-right: 0px;
+    background: url(../img/codezeel/action.png) no-repeat scroll center -415px;
+}
