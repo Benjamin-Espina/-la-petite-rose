@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="css/comprar.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <meta charset="utf-8">
     <title>La petite rose</title>
     <link rel="shortcut icon" href="img/logo.png">
@@ -18,7 +18,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/script.js"></script>
 <body>
 
     <!--NAVBAR-->
@@ -44,12 +45,13 @@
                       Categoría
                     </a>
                     <ul class="dropdown-menu mx-auto text-center" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item text-uppercase text-dark" href="#">Maceteros</a></li>
-                      <li><a class="dropdown-item text-uppercase text-dark" href="#">Tierra de hojas</a></li>
-                      <li><a class="dropdown-item text-uppercase text-dark" href="#">Flores</a></li>
-                      <li><a class="dropdown-item text-uppercase text-dark" href="#">Arbustos</a></li>
-                      <li><a class="dropdown-item text-uppercase text-dark" href="comprar.html">Ver todos</a></li>
-                      
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Plantas de exterior" href="#">Plantas de exterior</a></li>
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Plantas de interior" href="#">Plantas de interior</a></li>
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Tierra de hojas" href="#">Tierra de hojas</a></li>
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Maceteros" href="#">Maceteros</a></li>
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Arboles" href="#">Arboles</a></li>
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Flores" href="#">Flores</a></li>
+                        <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Maceteros" href="comprar.html">Ver todos</a></li>
                     </ul>
                 
                <li class="nav-item dropdown px-2 py-2">
@@ -86,175 +88,237 @@
         </div>
     </div>
     </nav>
-    <!---Titulo-->
-    <div style="text-align: center; margin-top: 5.5%;">
-      <h3 class="decoracion position-relative d-inline-block text-uppercase fw-bold mt-5" style="margin-bottom:30px;">
-        productos</h3>
-    </div>
-    
     <!---Productos-->
-    <div class="container ">
-      <div class=" text-center">
-          <h3 class="decoracion position-relative d-inline-block text-uppercase fw-bold mt-5" style="margin-bottom:30px;">productos</h3>
+    <div class="wrap container">
+      <div style="text-align: center; margin-top: 20%;">
+        <h3 class="decoracion position-relative d-inline-block text-uppercase fw-bold mt-5" style="margin-bottom:50px;">
+          productos</h3>
       </div>
-
-      <div class="text-center mt-5">
-        <h2 class = "decoracion2 position-relative d-inline-block text-uppercase fw-bold mt-5" style ="margin-bottom:25px;">Maceteros</h2>
-      </div>
-          <!--Maceteros-->
+      <div class="row container-fluid mt-5 ">
+        <div class="category_list">
+          <a href="#" class="category_item" category="Plantas de interior">Plantas de interior</a>
+          <a href="#" class="category_item" category="Plantas de exterior">Plantas de exterior</a>
+          <a href="#" class="category_item" category="Arboles">Arboles</a>
+          <a href="#" class="category_item" category="Maceteros">Maceteros</a>
+          <a href="#" class="category_item" category="Flores">Flores</a>
+          <a href="#" class="category_item" category="Tierra de hojas">Tierra de hojas</a>
+          <a href="#" class="category_item" category="all">Ver todo</a>
+        </div>
+        <section class="products-list">
+          <!--Plantas de interior-->
       <div class="row contenedor-prod mt-5">
-          <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-              <img class="card-img-top h-100" src="img/maceterocolgante.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">Macetero colgante</h4>
-                <p class="card-text">$5.500</p>
-                <a href="#" class="btn btn-primary">Añadir al carro</a>
-                <a href="#" class="quick-view" data-link-action="quickview"></a>
-              </div>
-            </div>
-
-            <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-              <img class="card-img-top h-100" src="img/jardinera1.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">Macetero jardinera negro</h4>
-                <p class="card-text">$25.000</p>
-                <div class="product-action">
-                  <form action="macetero.html" method="post" class="add-to-cart-or-refresh"></form>
-                </div>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                    <i class="material-icons search"></i>
-                    " Vista rapida "
-              </div>
-            </div>
-
-            <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-              <img class="card-img-top h-100" src="img/jardinera2.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">Macetero jardinera</h4>
-                <p class="card-text">$20.000</p>
-                <a href="#" class="btn btn-primary">Añadir al carro</a>
-              </div>
-            </div>
-
-            <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-              <img class="card-img-top h-100" src="img/macetero plastico terracotaplato.jpg" alt="Card image">
-              <div class="card-body">
-                <h4 class="card-title">Macetero plastico</h4>
-                <p class="card-text">$11.000</p>
-                <a href="#" class="btn btn-primary">Añadir al carro</a>
-              </div>
-            </div>
-
-
-            
-            <!--Fin macetero-->
-    </div>
-
-
-    </div>
-
-
-    <main>
-    <!---Flores-->
-    <div class="container">
-      <div class="text-center">
-        <h2 class = "decoracion2 d-inline-block position-relative p-1 text-uppercase fw-bold mt-5" style = "margin-bottom:25px;">Semillas de flores</h2>
-      </div>
-
-
-      <div class="row mt-5 contenedor-prod">
-        <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-          <img class="card-img-top h-100" src="img/rosa.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Semillas de rosa </h4>
-            <p class="card-text">$1.500 c/u </p>
-            <a href="#" class="btn btn-primary">Añadir al carro</a>
-          </div>
-        </div>
-
-        
-        <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-          <img class="card-img-top h-100" src="img/tulipan.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Semillas tulipan</h4>
-            <p class="card-text">$1.200 c/u </p>
-            <a href="#" class="btn btn-primary">Añadir al carro</a>
-          </div>
-        </div>
-
-        
-        <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-          <img class="card-img-top h-100" src="img/clavel.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Semillas clavel</h4>
-            <p class="card-text">$1.300 c/u</p>
-            <a href="#" class="btn btn-primary">Añadir al carro</a>
-          </div>
-        </div>
-
-        <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-          <img class="card-img-top h-100" src="img/Crisantemo.jpg" alt="Card image">
-          <div class="card-body">
-            <h4 class="card-title">Semilla crisantemo</h4>
-            <p class="card-text">$2.000</p>
-            <a href="#" class="btn btn-primary">Añadir al carro</a>
-          </div>
-        </div>
-
-
-        </div>
-        
-                <!---Fin flores-->
-
-
-      <!---Tierra de hojas -->
-      <div class="container">
-        <div class="text-center">
-          <h2 class =  "d-inline-block decoracion2 position-relative p-1 text-uppercase fw-bold mt-5" style = "margin-bottom:25px;">Tierra de hojas</h2>
-        </div>
-
-
-        <div class="row mt-5 contenedor-prod ">
-          <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-            <img class="card-img-top h-100" src="img/tierra1.jpg" alt="Card image">
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de interior" style="width:250px">
+            <img class="card-img-top h-100" src="img/dolarnegro2.png" alt="Card image">
             <div class="card-body">
-              <h4 class="card-title">Tierra de Hoja para Jardín 6 litros saco</h4>
-              <p class="card-text">$9.500</p>
+              <a href="dolarnegro.html">Dólar negro</a>
+              <p class="card-text">$4.200</p>
               <a href="#" class="btn btn-primary">Añadir al carro</a>
             </div>
           </div>
-
-          
-          <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-            <img class="card-img-top h-100" src="img/tierra2.jpg" alt="Card image">
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de interior" style="width:250px">
+            <img class="card-img-top h-100" src="img/palmita.png" alt="Card image">
             <div class="card-body">
-              <h4 class="card-title">Tierra hojas 30 litros saco</h4>
-              <p class="card-text">$6.500</p>
+              <a href="palmito.html">Palmito</a>
+              <p class="card-text">$3.400</p>
               <a href="#" class="btn btn-primary">Añadir al carro</a>
             </div>
           </div>
-
-          
-          <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-            <img class="card-img-top h-100" src="img/tierra3.jpg" alt="Card image">
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de interior" style="width:250px">
+            <img class="card-img-top h-100" src="img/helecho1.png" alt="Card image" >
             <div class="card-body">
-              <h4 class="card-title">Tierra de Hoja para Jardín 40 litros saco</h4>
+              <a href="helecho.html">Helecho</a>
+              <p class="card-text">$5.290</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de interior" style="width:250px">
+            <img class="card-img-top h-100" src="img/palodeagua.png" alt="Card image" >
+            <div class="card-body">
+              <a href="palodeagua.html">Palo de agua</a>
+              <p class="card-text">$4.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <!--Fin plantas-->
+
+          <!---Plantas de exterior-->
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de exterior" style="width:250px">
+            <img class="card-img-top h-100" src="img/lavanda.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="lavanda.html">Lavanda</a>
+              <p class="card-text">$2.990</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de exterior" style="width:250px">
+            <img class="card-img-top h-100" src="img/oregano.jpg" alt="Card image" >
+            <div class="card-body">
+              <a href="oregano.html">Oregano</a>
+              <p class="card-text">$4.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de exterior" style="width:250px">
+            <img class="card-img-top h-100" src="img/hortensia.png" alt="Card image">
+            <div class="card-body">
+              <a href="hortensia.html">Hortensia</a>
+              <p class="card-text">$3.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Plantas de exterior" style="width:250px">
+            <img class="card-img-top h-100" src="img/cicca.png" alt="Card image">
+            <div class="card-body">
+              <a href="cicca.html">Cicca</a>
+              <p class="card-text">$2.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <!---Fin plantas de exterior-->
+
+          <!---Arboles -->
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Arboles" style="width:250px">
+            <img class="card-img-top h-100" src="img/manzano.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="manzano.html">Manzano</a>
+              <p class="card-text">$11.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Arboles" style="width:250px">
+            <img class="card-img-top h-100" src="img/naranjo.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="naranjo.html">Naranjo</a>
+              <p class="card-text">$12.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Arboles" style="width:250px">
+            <img class="card-img-top h-100" src="img/pino.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="pino.html">Pino</a>
               <p class="card-text">$8.500</p>
               <a href="#" class="btn btn-primary">Añadir al carro</a>
             </div>
           </div>
-
-          <div class="card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " style="width:250px;">
-            <img class="card-img-top h-100" src="img/tierra4.jpg" alt="Card image">
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Arboles" style="width:250px">
+            <img class="card-img-top h-100" src="img/jacaranda.png" alt="Card image">
             <div class="card-body">
-              <h4 class="card-title">Tierra de Hoja para Jardin 40 litros saco</h4>
+              <a href="jacaranda.html">Jacaranda</a>
+              <p class="card-text">$15.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <!--Fin Arboles-->
+
+          <!--Maceteros-->
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Maceteros" style="width:250px">
+            <img class="card-img-top h-100" src="img/maceterocolgante.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="macetero.html">Macetero colgante</a>
+              <p class="card-text">$5.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Maceteros" style="width:250px">
+            <img class="card-img-top h-100" src="img/jardinera1.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="macetero1.html">Macetero negro</a>
+              <p class="card-text">$25.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Maceteros" style="width:250px">
+            <img class="card-img-top h-100" src="img/jardinera2.png" alt="Card image">
+            <div class="card-body">
+              <a href="macetero2.html">Macetero jardinera</a>
               <p class="card-text">$20.000</p>
               <a href="#" class="btn btn-primary">Añadir al carro</a>
             </div>
           </div>
-        </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Maceteros" style="width:250px">
+            <img class="card-img-top h-100" src="img/maceteroplastico.png"  alt="Card image">
+            <div class="card-body">
+              <a href="macetero3.html">Macetero plastico</a>
+              <p class="card-text">$11.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <!--Fin macetero-->
 
-      <!--Fin tiera de hojas-->
+          <!---Flores-->
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Flores" style="width:250px">
+            <img class="card-img-top h-100" src="img/rosa.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="rosa.html">Semillas de rosa </a>
+              <p class="card-text">$1.500 c/u </p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Flores" style="width:250px">
+            <img class="card-img-top h-100" src="img/tulipan.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="tulipan.html">Semillas tulipan</a>
+              <p class="card-text">$1.200 c/u </p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Flores" style="width:250px">
+            <img class="card-img-top h-100" src="img/clavel.jpg" alt="Card image">
+            <div class="card-body">
+              <a href="clavel.html">Semillas clavel</a>
+              <p class="card-text">$1.300 c/u</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Flores" style="width:250px">
+            <img class="card-img-top h-100" src="img/Crisantemo.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="crisantemo.html">Semilla crisantemo</a>
+              <p class="card-text">$2.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <!---Fin flores-->
+
+          <!---Tierra de hojas -->
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Tierra de hojas" style="width:250px">
+            <img class="card-img-top h-100" src="img/tierra1.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="saco.html">Saco de tierra 10 kilos</a>
+              <p class="card-text">$6.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Tierra de hojas" style="width:250px">
+            <img class="card-img-top h-100" src="img/tierra2.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="saco1.html">Saco de tierra 20 kilos</a>
+              <p class="card-text">$9.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Tierra de hojas" style="width:250px">
+            <img class="card-img-top h-100" src="img/tierra3.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="saco2.html">Saco de tierra 30 kilos</a>
+              <p class="card-text">$14.500</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <div class="product-item card text-center col-md-6 col-lg-4 col-xl-3 p-2 feat mt-5 " category="Tierra de hojas" style="width:250px">
+            <img class="card-img-top h-100" src="img/tierra4.jpg"  alt="Card image">
+            <div class="card-body">
+              <a href="saco3.html">Saco de tierra 40 kilos</a>
+              <p class="card-text">$20.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carro</a>
+            </div>
+          </div>
+          <!--Fin tiera de hojas-->
+        </section>
+      </div>
+    </div>
+  
       </main>
 
 
@@ -276,7 +340,7 @@
                         </li>
                         <li class = "my-3">
                             <a href = "#" class = "text-white text-decoration-none text-muted">
-                                 Contacto
+                                Contacto
                             </a>
                         </li>
                         <li class = "my-3">
