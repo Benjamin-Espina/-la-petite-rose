@@ -125,6 +125,7 @@ margin-left: 25px;
 
 footer h2 {
 font-size:20px
+
 }
 
 
@@ -158,4 +159,44 @@ font-size:20px
     padding: 5px;
 }
 /*Fin sobre nosotros*/
+
+/*Carro de compras*/
+
+.carro{
+    margin-top:150px;
+}
+
+table img {
+    width: 150px;
+    height:100px;
+}
+
+.tabla_prod {
+    display:flex; 
+}
+
+.table_prod > img {
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.tabla_cantidad > input {
+    width:40px;
+    border: none;
+    outline: 0;
+    font-size:16px;
+    font-weight:700;
+}
+
+.donar {
+    margin-top:150px;
+}
+
+.donar-1{
+    margin: 30px 0;
+    padding: 5px;
+}
+
 
