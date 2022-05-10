@@ -144,4 +144,18 @@ font-size:20px
             transform: translateY(-50%);
 }
 
+
+
 /*Fin decoracion titulos*/
+
+/*Sobre nosotros*/
+
+.aboutus{
+    margin-top:150px;
+}
+.sobre-1{
+    margin: 30px 0;
+    padding: 5px;
+}
+/*Fin sobre nosotros*/
+
