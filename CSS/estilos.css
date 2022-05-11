@@ -190,6 +190,9 @@ table img {
     font-weight:700;
 }
 
+
+/*Donar sección*/
+
 .donar {
     margin-top:150px;
 }
@@ -200,3 +203,78 @@ table img {
 }
 
 
+#donacion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.donacion2{
+    background:#ffffff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    position: sticky;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.donacion2 label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.donacion2 input {
+    margin-bottom: 20px;
+}
+.donacion2 h4 {
+    margin-top: 20px;
+}
+.donacion2 input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(130, 0, 0);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+
+
+/*Fin donar sección*/
+
+
+.shopping-cart {
+    margin-top:200px;
+}
+
+
+
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  
