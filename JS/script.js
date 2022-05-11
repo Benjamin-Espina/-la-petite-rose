@@ -35,3 +35,62 @@ $(document).ready(function(){
 		} setTimeout(showAll,400);
 	});
 });
+
+$.validator.setDefaults({
+	submitHandler: function () {
+		alert("submitted!");
+	}
+});
+
+
+$(document).ready(function () {
+	$('#signupForm').validate({
+		rules: {
+			nombre: {
+				required: true,
+				minlength: 5
+			},
+			apell: {
+				required: true,
+				minlength: 5
+			},
+			password: {
+				required: true,
+				minlength: 5
+			},
+			confirm_password: {
+				required: true,
+				minlength: 5,
+				equalTo: "#password"
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			agree: "required"
+		},
+		messages: {
+			nombre: {
+				required: "Por favor ingresa tu nombre completo",
+				minlength: "Tu nombre debe ser de no menos de 5 caracteres"
+			},
+			apell: {
+				required:  "Por favor ingresa tu apellido completo",
+				minlength: "Tu nombre debe ser de no menos de 5 caracteres"
+			},
+			password: {
+				required: "Por favor ingresa una contraseña",
+				minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud"
+			},
+			confirm_password: {
+				required: "Ingresa un password",
+				minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud",
+				equalTo: "Por favor ingresa la misma contraseña de arriba"
+			},
+			email: "Por favor ingresa un correo válido",
+			luckynumber: {
+				required: "Por favor"
+			}
+		},
+	});
+});
