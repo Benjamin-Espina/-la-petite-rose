@@ -71,14 +71,21 @@
               Categoría
             </a>
             <ul class="dropdown-menu mx-auto text-center" aria-labelledby="navbarDropdown">
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Plantas de exterior" href="#">Plantas de exterior</a></li>
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Plantas de interior" href="#">Plantas de interior</a></li>
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Tierra de hojas" href="#">Tierra de hojas</a></li>
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Maceteros" href="#">Maceteros</a></li>
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Arboles" href="#">Arboles</a></li>
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Flores" href="#">Flores</a></li>
-              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Maceteros" href="comprar.html">Ver todos</a></li>
-          </ul>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark"
+                  category="Plantas de exterior" href="comprar.html">Plantas de exterior</a></li>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark"
+                  category="Plantas de interior" href="comprar.html">Plantas de interior</a></li>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark"
+                  category="Tierra de hojas" href="comprar.html">Tierra de hojas</a></li>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Maceteros"
+                  href="comprar.html">Maceteros</a></li>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Arboles"
+                  href="comprar.html">Arboles</a></li>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="Flores"
+                  href="comprar.html">Flores</a></li>
+              <li><a class="category_item ct-item-active dropdown-item text-uppercase text-dark" category="all"
+                  href="comprar.html">Ver todos</a></li>
+            </ul>
 
           <li class="nav-item dropdown px-2 py-2">
             <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#" id="navbarDropdown" role="button"
@@ -87,8 +94,8 @@
             </a>
             <ul class="dropdown-menu mx-auto text-center" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item text-uppercase text-dark" href="iniciarsesion.html">Iniciar sesión</a></li>
-              <li><a class="dropdown-item text-uppercase text-dark" href="#">Registrarse</a></li>
-              <li><a class="dropdown-item text-uppercase text-dark" href="#">Mi cuenta</a></li>
+              <li><a class="dropdown-item text-uppercase text-dark" href="registrarse.html">Registrarse</a></li>
+              <li><a class="dropdown-item text-uppercase text-dark" href="micuenta.html">Mi cuenta</a></li>
 
             </ul>
           <li class="nav-item px-2 py-2">
@@ -97,11 +104,11 @@
           </li>
 
           <li class="nav-item px-2 py-2">
-            <a class="nav-link active text-uppercase text-dark" aria-current="page" href="#">Donar</a>
+            <a class="nav-link active text-uppercase text-dark" aria-current="page" href="donar.html">Donar</a>
           </li>
 
           <li class="nav-item px-2 py-2">
-            <a class="nav-link text-uppercase text-dark" href="#">
+            <a class="nav-link text-uppercase text-dark" href="carro.html">
               <svg class="carrito" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                 class="bi bi-cart-fill" viewBox="0 0 16 16">
                 <path
@@ -118,37 +125,37 @@
       </div>
     </div>
   </nav>
-    <!---Titulo-->
-    <div style="text-align: center; margin-top: 10%;">
-        <h3 class="decoracion position-relative d-inline-block text-uppercase fw-bold mt-5" style="margin-bottom:30px;">
-            Jacaranda</h3>
+  <!---Titulo-->
+  <div style="text-align: center; margin-top: 10%;">
+    <h3 class="decoracion position-relative d-inline-block text-uppercase fw-bold mt-5" style="margin-bottom:30px;">
+      Jacaranda</h3>
+  </div>
+  <!---Lavanda-->
+  <div class="container" style="display: flex; margin-top: 1.5%; margin-left: 5px;">
+    <!---Imagen-->
+    <div class="product" style="margin-left: 3em">
+      <div class="img-container">
+        <img id="imageBox" src="img/jacaranda.png">
+      </div>
+      <div class="product-small-img">
+        <img src="img/jacaranda.png" onclick="myFuction(this)">
+        <img src="img/jacaranda1.png" onclick="myFuction(this)">
+      </div>
     </div>
-    <!---Lavanda-->
-    <div class="container" style="display: flex; margin-top: 1.5%; margin-left: 5px;">
-        <!---Imagen-->
-        <div class="product" style="margin-left: 3em">
-            <div class="img-container">
-                <img id="imageBox" src="img/jacaranda.png">
-            </div>
-            <div class="product-small-img">
-                <img src="img/jacaranda.png" onclick="myFuction(this)">
-                <img src="img/jacaranda1.png" onclick="myFuction(this)">
-            </div>
-        </div>
-        <label for="imga">
-            <h3 class="text-success" style="margin-bottom:30px; margin-left: 10px;">Descripcion</h3>
-            <p class="text-success" style="margin-left: 10px;">Es un árbol subtropical de la familia Bignoniaceae oriundo de
-                Sudamérica y ampliamente cultivado por sus vistosas y duraderas flores violetas.</p>
-            <h3 class="text-success" style="margin-bottom:30px; margin-left: 10px;">Cuidados</h3>
-            <p class="text-success" style="margin-left: 10px;">- El Jacarandá debe protegerse ante temperaturas más bajas.
-            </p>
-            <p class="text-success" style="margin-left: 10px;">- Si se le mantiene todo el año dentro de casa, será
-                complicado reducir el tamaño de sus hojas.</p>
-            <p class="text-success" style="margin-left: 10px;">- No lo coloque encima de la calefacción. En el invierno,
-                cuando no haya suficiente luz, el árbol puede llegar a perder sus hojas; pero en la primavera volverán a
-                crecer.</p>
-        </label>
-    </div>
+    <label for="imga">
+      <h3 class="text-success" style="margin-bottom:30px; margin-left: 10px;">Descripcion</h3>
+      <p class="text-success" style="margin-left: 10px;">Es un árbol subtropical de la familia Bignoniaceae oriundo de
+        Sudamérica y ampliamente cultivado por sus vistosas y duraderas flores violetas.</p>
+      <h3 class="text-success" style="margin-bottom:30px; margin-left: 10px;">Cuidados</h3>
+      <p class="text-success" style="margin-left: 10px;">- El Jacarandá debe protegerse ante temperaturas más bajas.
+      </p>
+      <p class="text-success" style="margin-left: 10px;">- Si se le mantiene todo el año dentro de casa, será
+        complicado reducir el tamaño de sus hojas.</p>
+      <p class="text-success" style="margin-left: 10px;">- No lo coloque encima de la calefacción. En el invierno,
+        cuando no haya suficiente luz, el árbol puede llegar a perder sus hojas; pero en la primavera volverán a
+        crecer.</p>
+    </label>
+  </div>
 
 
   <script type="text/javascript">
