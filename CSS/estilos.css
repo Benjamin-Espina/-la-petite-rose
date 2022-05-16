@@ -278,3 +278,130 @@ table img {
     min-height: 96px;
   }
   
+
+
+  /* Buscador de productos*/ 
+
+  
+  .buscador input {
+    width: 500px;
+    height:50px;
+    
+}
+
+
+.buscador button{
+  
+    height: 50px;
+    background: black;
+   
+}
+
+
+    
+    
+
+
+
+
+
+
+.navlinks a {
+    
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.menu {
+    background:red;
+    display:flex;
+    align-items: center;
+}
+.navlinks{
+    display:block;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 992px){
+    .navlinks {
+        display: flex;
+        margin: 0 auto;
+     
+      
+    }
+    .navlinks li {
+        margin: 0 8px;
+        list-style: none;
+        
+    }
+    .menu {
+        background:red;
+        display:flex;
+        align-items: center;
+        height: 50px;
+    }
+
+}
+
+
+/* sección inicio ventas*/ 
+
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow:hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width:400%;
+    animation: cambio 10s infinite ;
+}
+
+.slider li {
+    width:100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 700;
+
+}
+
+
+
+
+@media (max-width: 425px){
+    .slider img {
+        width: 100%;
+        height: 350;
+    }
+}
+
+@media (min-width: 768px){
+    .slider img {
+        width: 100%;
+        height: 650;
+    }
+}
+
+
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    33% { margin-left: 0;} 
+
+    38% { margin-left: -150%;}
+    66% { margin-left: -150%;} 
+
+    71% {margin-left: -300%;}
+    99%{ margin-left: -300%;}
+}
+
+
